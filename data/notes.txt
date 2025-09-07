@@ -1,1 +1,47 @@
-#placeholder
+# Lab06 - Notas de Ejecución y Configuración
+# Universidad del Valle de Guatemala - CC3086
+
+=== CONFIGURACIONES DE PRUEBA RECOMENDADAS ===
+
+PRÁCTICA 1 - CONTADOR:
+- Threads: 1, 2, 4, 8, 16
+- Iteraciones: 10000, 100000, 1000000
+- Observar diferencias entre naive, mutex, sharded, atomic
+
+PRÁCTICA 2 - BÚFER CIRCULAR:
+- Configuraciones P/C: 1/1, 2/1, 1/2, 2/2, 4/2, 2/4
+- Items por productor: 10000, 50000, 100000
+- Tamaño de buffer: 64, 256, 1024
+
+PRÁCTICA 3 - LECTORES/ESCRITORES:
+- Threads: 2, 4, 8, 16
+- Operaciones: 10000, 50000, 100000
+- Proporciones R/W: 90/10, 70/30, 50/50, 30/70, 10/90
+
+PRÁCTICA 4 - DEADLOCK:
+- Threads: 2, 4, 6, 8
+- Usar --skip-deadlock para evitar cuelgues
+- Probar diferentes estrategias de prevención
+
+PRÁCTICA 5 - PIPELINE:
+- Ticks: 100, 500, 1000, 2000
+- Monitorear balance entre etapas
+- Observar throughput y latencia
+
+=== PARÁMETROS DE SISTEMA ===
+CPU_CORES=$(nproc)
+MEMORY=$(free -h | grep Mem | awk '{print $2}')
+OS=$(uname -a)
+
+=== UMBRALES DE RENDIMIENTO ===
+- Overhead de mutex vs atomic: <30%
+- Eficiencia de pipeline: >80%
+- Pérdida en búfer circular: <1%
+- Speedup con múltiples threads: >1.5x para 2 threads
+
+=== MÉTRICAS CLAVE ===
+1. Throughput (operaciones/segundo)
+2. Latencia (tiempo de respuesta)
+3. Escalabilidad (speedup vs threads)
+4. Correctness (resultados esperados)
+5. Resource utilization (CPU, memoria)

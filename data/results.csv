@@ -1,1 +1,10 @@
-#placeholder para resultados
+practice,config,timestamp,execution_time,throughput,success,additional_metrics
+# Este archivo se poblará automáticamente durante la ejecución
+# Columnas:
+# - practice: p1_counter, p2_ring, p3_rw, p4_deadlock, p5_pipeline
+# - config: configuración específica (ej: threads=4_iterations=100000)
+# - timestamp: ISO timestamp de la ejecución
+# - execution_time: tiempo en segundos
+# - throughput: operaciones por segundo
+# - success: true/false
+# - additional_metrics: JSON con métricas adicionales

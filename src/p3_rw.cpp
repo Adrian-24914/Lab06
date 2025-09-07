@@ -3,7 +3,7 @@
  * CC3086 Programación de Microprocesadores
  * Laboratorio 6 - Práctica 3: Lectores/Escritores con HashMap
  * 
- * Autor: [Tu Nombre]
+ * Autor: Adrian Penagos
  * Fecha: Septiembre 2025
  * Propósito: Comparar pthread_rwlock_t vs pthread_mutex_t en tabla hash
  *           Evaluar rendimiento bajo diferentes proporciones de lectura/escritura

@@ -3,7 +3,7 @@
  * CC3086 Programación de Microprocesadores
  * Laboratorio 6 - Práctica 5: Pipeline con Barreras y pthread_once
  * 
- * Autor: [Tu Nombre]
+ * Autor: Adrian Penagos
  * Fecha: Septiembre 2025
  * Propósito: Construir pipeline de 3 etapas sincronizado con barriers
  *           Inicialización única con pthread_once y medición de throughput

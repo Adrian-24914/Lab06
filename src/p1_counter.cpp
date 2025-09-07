@@ -16,6 +16,7 @@
 #include <atomic>
 #include <chrono>
 #include <cassert>
+#include <cmath> 
 
 // ============================================================================
 // ESTRUCTURAS Y TIPOS

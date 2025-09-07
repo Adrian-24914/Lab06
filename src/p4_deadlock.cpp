@@ -17,6 +17,7 @@
 #include <vector>
 #include <cassert>
 #include <random>
+#include <algorithm>
 
 // ============================================================================
 // RECURSOS COMPARTIDOS Y SINCRONIZACIÓN

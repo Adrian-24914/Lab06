@@ -20,6 +20,7 @@
 #include <unistd.h>
 #include <random>
 #include <cstring>
+#include <cmath>  
 
 // ============================================================================
 // CONSTANTES Y CONFIGURACIÓN DEL PIPELINE

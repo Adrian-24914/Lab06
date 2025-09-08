@@ -302,9 +302,9 @@ void* thread_trylock_backoff(void* arg) {
  * Demostrar deadlock intencional
  */
 void demonstrate_deadlock() {
-    printf("\n" + std::string(60, '=') + "\n");
+    printf("============================================================\n");
     printf("🚨 DEMOSTRACIÓN DE DEADLOCK\n");
-    printf(std::string(60, '=') + "\n");
+    printf("============================================================\n");
     
     printf("ADVERTENCIA: Esta demostración puede colgarse (deadlock)\n");
     printf("Si no hay salida en 10 segundos, el programa está en deadlock.\n");
@@ -345,9 +345,9 @@ void demonstrate_deadlock() {
  * Benchmark de la solución con orden total
  */
 void benchmark_ordered_solution(int num_threads) {
-    printf("\n" + std::string(60, '=') + "\n");
+    printf("============================================================\n");
     printf("✅ SOLUCIÓN: ORDEN TOTAL DE MUTEX\n");
-    printf(std::string(60, '=') + "\n");
+    printf("============================================================\n");
     
     shared_resource_A = 0;
     shared_resource_B = 0;
@@ -378,9 +378,9 @@ void benchmark_ordered_solution(int num_threads) {
  * Benchmark de la solución con trylock y backoff
  */
 void benchmark_trylock_solution(int num_threads) {
-    printf("\n" + std::string(60, '=') + "\n");
+    printf("============================================================\n");
     printf("🔄 SOLUCIÓN: TRYLOCK CON BACKOFF\n");
-    printf(std::string(60, '=') + "\n");
+    printf("============================================================\n");
     
     shared_resource_A = 0;
     shared_resource_B = 0;
@@ -437,9 +437,9 @@ int main(int argc, char** argv) {
     // Estadísticas globales
     global_stats.print_stats();
     
-    printf("\n" + std::string(60, '=') + "\n");
+    printf("============================================================\n");
     printf("=== ANÁLISIS DE CONDICIONES DE COFFMAN ===\n");
-    printf(std::string(60, '=') + "\n");
+    printf("============================================================\n");
     printf("Para que ocurra deadlock se deben cumplir las 4 condiciones:\n\n");
     
     printf("1. 🔒 EXCLUSIÓN MUTUA\n");

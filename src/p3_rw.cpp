@@ -443,10 +443,10 @@ int main(int argc, char** argv) {
     
     printf("\n=== COMPARACIÓN MUTEX vs RWLOCK ===\n");
     
-    for (int read_pct : read_percentages) {
-        printf("\n" + std::string(60, '='));
-        printf("\nPROPORCIÓN: %d%% LECTURAS, %d%% ESCRITURAS\n", read_pct, 100 - read_pct);
-        printf(std::string(60, '=') + "\n");
+        for (int read_pct : read_percentages) {
+        printf("\n============================================================\n");
+        printf("PROPORCIÓN: %d%% LECTURAS, %d%% ESCRITURAS\n", read_pct, 100 - read_pct);
+        printf("============================================================\n");
         
         // Test con Mutex HashMap
         MutexHashMap mutex_map;
@@ -476,8 +476,8 @@ int main(int argc, char** argv) {
         }
     }
     
-    printf("\n" + std::string(60, '='));
-    printf("\n=== CONCLUSIONES ===\n");
+    printf("\n============================================================\n");
+    printf("=== CONCLUSIONES ===\n");
     printf("• RWLock conviene cuando > 70%% son lecturas\n");
     printf("• Mutex puede ser mejor con muchas escrituras (menos overhead)\n");
     printf("• El tamaño del bucket afecta la contención:\n");

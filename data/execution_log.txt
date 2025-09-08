@@ -1,0 +1,37 @@
+=== Lab06 Execution Log ===
+Start time: Sun Sep  7 18:15:26 CST 2025
+User: chiri
+System: Linux ADRG15 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Threads available: 16
+
+[2025-09-07 18:15:26] [SUCCESS] Entorno configurado exitosamente
+[2025-09-07 18:15:26] [INFO] Configuración global: 4 threads, 100000 iteraciones
+[2025-09-07 18:15:26] [INFO] Configuración: 4 threads, 100000 iteraciones/thread
+[2025-09-07 18:15:26] [INFO] Ejecutando: Práctica 1 - Contador con race conditions
+[2025-09-07 18:15:26] [INFO] Comando: bin/p1_counter 4 100000
+[2025-09-07 18:15:26] [SUCCESS] Práctica 1 - Contador con race conditions completado exitosamente
+[2025-09-07 18:15:26] [INFO] Configuración: 2P/2C, 100000 items/productor
+[2025-09-07 18:15:27] [INFO] Ejecutando: Práctica 2 - Búfer circular
+[2025-09-07 18:15:27] [INFO] Comando: bin/p2_ring 2 2 100000
+[2025-09-07 18:15:31] [SUCCESS] Práctica 2 - Búfer circular completado exitosamente
+[2025-09-07 18:15:31] [INFO] Configuración: 4 threads, 100000 ops/thread
+[2025-09-07 18:15:31] [INFO] Ejecutando: Práctica 3 - Lectores/Escritores
+[2025-09-07 18:15:31] [INFO] Comando: bin/p3_rw 4 100000
+[2025-09-07 18:15:32] [SUCCESS] Práctica 3 - Lectores/Escritores completado exitosamente
+[2025-09-07 18:15:32] [INFO] Configuración: 4 threads
+[2025-09-07 18:15:32] [WARN] ⚠️  ADVERTENCIA: Esta práctica puede causar deadlock intencional
+[2025-09-07 18:15:32] [INFO] Si el programa se cuelga más de 30s, será terminado automáticamente
+[2025-09-07 18:15:32] [INFO] Ejecutando: Práctica 4 - Deadlock y correcciones
+[2025-09-07 18:15:32] [INFO] Comando: bin/p4_deadlock 4 0
+[2025-09-07 18:16:03] [WARN] Práctica 4 - Deadlock y correcciones terminado por timeout (30s)
+[2025-09-07 18:16:03] [INFO] Configuración: Pipeline de 3 etapas, 100000 ticks
+[2025-09-07 18:16:03] [INFO] Ejecutando: Práctica 5 - Pipeline con barreras
+[2025-09-07 18:16:03] [INFO] Comando: bin/p5_pipeline 100000
+[2025-09-07 18:16:06] [SUCCESS] Práctica 5 - Pipeline con barreras completado exitosamente
+[2025-09-07 18:16:06] [HEADER] Resultados guardados en:
+[2025-09-07 18:16:06] [INFO] Últimos resultados de benchmark:
+[2025-09-07 18:16:06] [INFO] Archivos generados en data:
+[2025-09-07 18:16:06] [INFO] Uso de recursos durante la ejecución:
+[2025-09-07 18:16:06] [SUCCESS] Ejecución completada exitosamente
+[2025-09-07 18:16:06] [INFO] Generando análisis de datos con Python...
+[2025-09-07 18:16:07] [SUCCESS] 🎉 Ejecución del Lab06 completada exitosamente

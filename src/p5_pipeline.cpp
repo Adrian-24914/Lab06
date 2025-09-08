@@ -542,9 +542,9 @@ void request_pipeline_shutdown() {
 // ============================================================================
 
 void run_pipeline_benchmark(int num_ticks) {
-    printf("\n" + std::string(60, '=') + "\n");
+    printf("============================================================\n");
     printf("🏭 EJECUTANDO PIPELINE BENCHMARK\n");
-    printf(std::string(60, '=') + "\n");
+    printf("============================================================\n");
     printf("Configuración: %d ticks por etapa\n", num_ticks);
     
     // Reinicializar barrier para 3 etapas
@@ -615,9 +615,9 @@ int main(int argc, char** argv) {
     // Ejecutar benchmark del pipeline
     run_pipeline_benchmark(num_ticks);
     
-    printf("\n" + std::string(60, '=') + "\n");
+    printf("============================================================\n");
     printf("=== ANÁLISIS DE DISEÑO ===\n");
-    printf(std::string(60, '=') + "\n");
+    printf("============================================================\n");
     
     printf("🔄 BARRERAS vs COLAS:\n");
     printf("• Barreras: Sincronización por lotes (batch processing)\n");
